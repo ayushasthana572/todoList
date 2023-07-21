@@ -89,12 +89,12 @@ function addToServer(todos){
     })
 }
 // ***********************************************
-function addToLocalStorage(todos){
-    //convert the array to string then store it
-    localStorage.setItem('todos',JSON.stringify(todos));
-    //render them to screen
-    renderToDo(todos);
-}
+// function addToLocalStorage(todos){
+//     //convert the array to string then store it
+//     localStorage.setItem('todos',JSON.stringify(todos));
+//     //render them to screen
+//     renderToDo(todos);
+// }
 
 
 
@@ -115,17 +115,17 @@ function getFromServer(){
 }
 //************************************************ */
 
-//get everything from local storage
-function getFormLocalStorage(){
-    const reference = localStorage.getItem('todos');
+// //get everything from local storage
+// function getFormLocalStorage(){
+//     const reference = localStorage.getItem('todos');
 
-    //if reference exists
-    if(reference){
-        //convert back to array and store it in todos array
-        todos = JSON.parse(reference);
-        renderToDo(todos);
-    }
-}
+//     //if reference exists
+//     if(reference){
+//         //convert back to array and store it in todos array
+//         todos = JSON.parse(reference);
+//         renderToDo(todos);
+//     }
+// }
 
 //toggle the value to completed and not completed
 
